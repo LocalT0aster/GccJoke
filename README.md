@@ -1,6 +1,6 @@
 # GCC Joke for OS Labs
 
-Welcome to `GccJoke`! This repository is a light-hearted, educational tool designed for Operating Systems lab students. It playfully simulates a scenario where a user named 'Firas' is unable to compile C code using `gcc`.
+Welcome to `GccJoke`! This repository is a light-hearted, educational tool designed for Operating Systems lab students. It playfully simulates a scenario where a user named 'Firas' (customizable) is unable to compile C code using `gcc`.
 
 ## Important Note / Disclaimer
 

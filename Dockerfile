@@ -4,7 +4,7 @@ FROM alpine:3
 RUN apk add --no-cache sudo bash sed
 
 # Add build argument for username
-# You can change firas to any name you like, but it needs to be in lowercase
+# You can change the UNAME value to any name you like, but it needs to be in lowercase
 ARG UNAME=firas
 ENV UNAME=${UNAME}
 

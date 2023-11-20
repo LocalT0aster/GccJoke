@@ -1,9 +1,12 @@
-FROM debian:latest
+FROM alpine:3
 
-ARG NAME=firas
+# Install sudo and bash
+RUN apk add --no-cache sudo bash sed
 
-# Install sudo, bash, and other essentials
-RUN apt-get update && apt-get install -y sudo bash
+# Add build argument for username
+# You can change firas to any name you like, but it needs to be in lowercase
+ARG UNAME=firas
+ENV UNAME=${UNAME}
 
 # Copy the setup script and mock_gcc script to the container
 COPY env_setup.sh /
@@ -15,5 +18,5 @@ RUN chmod +x /gcc.sh
 RUN /env_setup.sh
 
 # Switch to user ${USERNAME}
-USER ${NAME}
-WORKDIR /home/${NAME}
+USER ${UNAME}
+WORKDIR /home/${UNAME}

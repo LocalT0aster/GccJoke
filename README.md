@@ -20,7 +20,7 @@ Welcome to `GccJoke`! This repository is a light-hearted, educational tool desig
 ## Features
 
 - **GCC Script**: A script that mimics the `gcc` command, providing a humorous message instead of compiling C code.
-- **Docker Setup**: Includes a Dockerfile for setting up a Debian environment where this scenario is replicated.
+- **Docker Setup**: Includes a Dockerfile for setting up a Alpine environment where this scenario is replicated.
 
 ## Educational Purpose
 
@@ -37,12 +37,11 @@ You need to have [Docker](https://docs.docker.com/engine/install/) and [Git](htt
 3. Type the command (or copy & paste this):
 
    ```bash
-   clear
    gcc ex1.c -o ex1
    ```
 
 4. Explore the scripts to see how user-specific environments and commands can be manipulated in Linux.
-5. If you want to change name *Firas* to something else, then don't be afraid to change NAME variable at the beginning of every script and Dockerfile.
+5. If you want to change name *Firas* to something else, change the `UNAME` variable in the `Dockerfile`.
 
 > **Note**
 > Pasting in Linux terminal is done by <kbd>Ctrl</kbd>+<kbd>⇧Shift</kbd>+<kbd>V</kbd>.

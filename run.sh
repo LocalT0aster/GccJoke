@@ -20,4 +20,4 @@ docker build -t $IMAGE_NAME .
 
 # Run the Docker container in interactive mode
 echo "Starting Docker container..."
-docker run --name $CONTAINER_NAME -it --rm $IMAGE_NAME
+docker run --name $CONTAINER_NAME -it --rm $IMAGE_NAME bash
